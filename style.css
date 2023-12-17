@@ -1,0 +1,69 @@
+
+
+/* Light theme */
+:root{
+    --bg-main:#18122B;
+    --bg-primary:#ECF2FF;
+    --bg-secondary:#FFC0CB;
+}
+
+body{
+    background-color:var(--bg-primary);
+    color: var(--bg-main);
+}
+
+a,li{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+/* Dark Theme */
+
+:root .darkmode{
+    --bg-main:#18122B;
+    --bg-primary:#ECF2FF;
+    --bg-secondary:#FFC0CB;
+}
+
+body .darkmode{
+    background-color:var(--bg-main);
+    color: var(--bg-primary);
+}
+
+.darkmode a {
+    color: var(--bg-main);
+
+}
+
+
+#checkbox{
+    visibility: hidden;
+}
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(2rem);
+    background-color: #FFC0CB;
+}
+.toggle-btn{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.toggle-label {
+    width: 6rem;
+    height: 4rem;
+    background-color: var(--bg-main);
+    display: inline-block;
+    border-radius: 10rem;
+
+}
+.toggle-ball{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--bg-primary);
+    display: inline-block;
+    position: absolute;
+    top: 4.7rem;
+    left: 63.5rem;
+    transition: all .2s linear;
+}
